@@ -9,18 +9,8 @@
     "footer footer";
 }
 
-header, nav, main, footer {
-background: linear-gradient(to right, lightgreen, teal);
-background:rgba(0,0,0,.2);
-header h1: mediumspringgreen; 
-text-shadow: 2px 2px 5px navy;
-header h3, nav a, main h2: navy;
-main p, footer p: white;
-header h1: 5vw;
-header h3: 2vw
-main h2: 3em;
-nav li: 1.5em;
-main p, footer p: 1em;
+body{
+  background: linear-gradient(to right, lightgreen, teal);
 }
 
 nav {
@@ -28,9 +18,27 @@ nav {
     background:rgba(0,0,0,.2);
     }
 
+header, nav, main, footer {
+  background:rgba(0,0,0,.2);
+}
+
+header {
+h1: mediumspringgreen; 
+text-shadow: 2px 2px 5px navy;
+}
+  
+header h3, nav a, main{ 
+h2: navy;
+}
+
+main p, footer p{ 
+white;
+}
+  
 nav ul {
    padding:10px;
    margin:0;
+}
 
   nav li {
     padding:10px 10px;
