@@ -72,3 +72,6 @@ nav li{
   em=1.5em;
 }
 
+main p, footer p {
+    em= 1em;
+}
