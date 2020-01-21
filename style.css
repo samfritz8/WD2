@@ -11,6 +11,8 @@
 
 body{
   background: linear-gradient(to right, lightgreen, teal);
+  margin:0;
+  font-family: Veradana;
 }
 
 nav {
