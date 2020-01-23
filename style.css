@@ -9,6 +9,10 @@
     "footer footer";
 }
 
+heading {
+ background:rgba(0,0,0,.2); 
+}
+
 body{
   background: linear-gradient(to right, lightgreen, teal);
   margin:0;
@@ -19,6 +23,7 @@ body{
 main {
  padding: 5px; 
  grid-area:main;
+ background:rgba(0,0,0,.2);
 }
 
 nav {
@@ -28,6 +33,7 @@ nav {
 
 footer {
   grid-area: footer;
+  background:rgba(0,0,0,.2);
 }
 
 header, nav, main, footer {
