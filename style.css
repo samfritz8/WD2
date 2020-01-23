@@ -9,6 +9,7 @@ body{
 header{
  background:rgba(0,0,0,.2); 
  grid-area:header;
+ text-align: center;
 }
 
 
@@ -26,6 +27,7 @@ nav {
 footer {
   grid-area: footer;
   background:rgba(0,0,0,.2);
+  text-align: center;
 }
 
 
