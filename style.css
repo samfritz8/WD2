@@ -12,7 +12,11 @@
 body{
   background: linear-gradient(to right, lightgreen, teal);
   margin:0;
-  font-family: Veradana;
+  font-family: Verdana;
+}
+
+main {
+ padding: 5px; 
 }
 
 nav {
