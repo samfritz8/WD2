@@ -13,16 +13,22 @@ body{
   background: linear-gradient(to right, lightgreen, teal);
   margin:0;
   font-family: Verdana;
+  grid-area: body;
 }
 
 main {
  padding: 5px; 
+ grid-area:main;
 }
 
 nav {
     grid-area:nav;
     background:rgba(0,0,0,.2);
     }
+
+footer {
+  grid-area: footer;
+}
 
 header, nav, main, footer {
   background:rgba(0,0,0,.2);
@@ -39,7 +45,7 @@ color: navy;
 
 main p, footer p { 
 color:white;
-  em= 1em;
+  font-size:1em;
 }
   
 nav ul {
@@ -64,18 +70,18 @@ a:hover {
 }
 
 header h1{ 
- vh:5vw; 
+ font-size:5vw; 
 }
 header h3{
-  vh:2vw;
+  font-size:2vw;
 }
 main h2{
- em=3em;
+ font-size:3em;
 }
 nav li{ 
-  em=1.5em;
+  font-size:1.5em;
 }
 
 main p, footer p {
-    em= 1em;
+    font-size:1em;
 }
