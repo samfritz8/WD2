@@ -82,6 +82,10 @@ main h2{
 main p, footer p {
     font-size:1em;
 }
+
+footer p{
+padding: 0;  
+}
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns:auto 1fr;
