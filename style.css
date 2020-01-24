@@ -84,7 +84,8 @@ main p, footer p {
 }
 
 footer p{
-padding: 0;  
+padding: 0;
+  margin: 0;
 }
 .container1 { /*for index.html*/
   display: grid;
