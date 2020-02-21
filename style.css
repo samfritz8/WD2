@@ -104,6 +104,37 @@ aside{
     text-align:center;
     padding:5px 0;
   }
+  article{
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+  .top{
+    grid-area: top;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+    .middle{
+    grid-area: middle;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+  .bottom{
+    grid-area: bottom;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+  article h2{
+    text-align:center;
+    color:navy;
+  }
+  article p {
+    color: white;
+    text-align: left;
+    
+  }
+  .travelpic {
+    margin:auto;
+  }
 
  /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -116,6 +147,20 @@ aside{
     "nav"
     "main"
     "aside"
+    "footer";
+    }
+    .container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
     "footer";
     }
 
@@ -156,6 +201,16 @@ aside{
     "aside aside"
     "footer footer";
     }
+.container2 { /*for blog.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+    }
 
 
 /* Below will change from hamburger menu to side navigation*/
@@ -184,6 +239,15 @@ aside{
   grid-template-areas:
     "header header header"
     "nav main aside"
+    "footer footer footer";
+    }
+.container2 { /*for blog.html*/
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
     "footer footer footer";
     }
 	
