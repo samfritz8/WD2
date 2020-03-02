@@ -135,8 +135,34 @@ aside{
   .travelpic {
     margin:auto;
   }
+  figure {
+    margin:0;
+    text-align:center;
+  }
+  figcaption {
+    padding: 5px;
+    color:navy;
+    font-weight:bold;
+  }
+   figure img {
+     padding-top:10px;
+   }
+  section{
+     grid-area: section;
+       padding:5px;
+     }
+   .fig1 {
+     grid-area: fig1;
+       background:rgba(0,0,0,.2);
+       padding:5px;
+   }
+   .fig2 {
+     grid-area: fig2;
+       background:rgba(0,0,0,.2);
+       padding:5px;
+   }
 
- /*---------------------------Mobile Layout Styles----------------------------*/
+/*------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns:100%;
@@ -163,7 +189,25 @@ aside{
     "bottom"
     "footer";
     }
-
+    .container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "fig2"
+    "footer";
+    }
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -190,7 +234,13 @@ aside{
     padding-top:10px;
     }
 
-
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
 .container1 { /*for index.html*/
@@ -211,7 +261,21 @@ aside{
     "bottom bottom"
     "footer footer";
     }
-
+.container3 { /*for special.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -229,7 +293,6 @@ aside{
     padding-top:10px;
   }
 
-	}
 
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
@@ -250,6 +313,18 @@ aside{
     "nav main bottom"
     "footer footer footer";
     }
-	
-
+.container3 { /*for special.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+}
+.nestedgrid {
+  display:grid;
+   grid-template-columns:1fr auto;
+  grid-template-areas:
+   "section fig1";
 	}
+}
