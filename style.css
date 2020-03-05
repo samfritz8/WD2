@@ -161,6 +161,18 @@ aside{
        background:rgba(0,0,0,.2);
        padding:5px;
    }
+   audio {
+       max-width: 100%;
+   }
+   video {
+       max-width:  100%;
+       height:auto;
+   }
+   .video, .audio {
+       margin:0;
+       display: grid;  /*This needs to be set or it won't center*/
+       justify-content:space-around;
+   }
 
 /*------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -172,7 +184,6 @@ aside{
     "header"
     "nav"
     "main"
-    "aside"
     "footer";
     }
     .container2 { /*for blog.html*/
@@ -208,6 +219,16 @@ aside{
  "section"
   "fig1";
 }
+	.container4 { /*for destination.html*/
+  grid-template-columns:100%;
+  display:grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+
+  }
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -276,6 +297,15 @@ aside{
  "section"
   "fig1";
 }
+	.container4 { /*for destination.html*/
+		grid-gap: .5em;
+    grid-template-columns:auto 1fr;
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -292,8 +322,6 @@ aside{
     padding-left:10px;
     padding-top:10px;
   }
-
-
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
 
@@ -327,4 +355,14 @@ aside{
   grid-template-areas:
    "section fig1";
 	}
+	
+	.container4 { /*for destination.html*/
+	grid-gap: .5em;
+  grid-template-columns:auto 1fr;
+  display:grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  }
 }
