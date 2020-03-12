@@ -173,7 +173,42 @@ aside{
        display: grid;  /*This needs to be set or it won't center*/
        justify-content:space-around;
    }
+   .call {
+    color:navy;
+    text-align:center;
+    font-size:2em;
+    background-color:darkseagreen;
+    width:60%;
+    padding: 5px 0 0 0;
+    margin:10px auto 0 auto;
+    cursor:pointer;
+   }
 
+  .phone{
+    color:darkseagreen;
+    background-color:navy;
+    padding:5px;
+    text-align:center;
+    font-size:.75em;
+  }
+  input {
+  margin: 1px 0 10px 0;
+  }
+  form {
+    background-color:darkseagreen;
+    width:90%;
+    margin:auto;
+    color:white;
+    padding:10px;
+  }
+  .button{
+    padding:5px;
+    background-color:navy;
+    color:lightseagreen;
+  }
+  
+
+  
 /*------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
@@ -227,6 +262,7 @@ aside{
     "nav"
     "main"
     "footer";
+    
 
   }
 /*This stuff is for the hamburger menu*/
@@ -262,6 +298,14 @@ aside{
  "section"
   "fig1";
 }
+.nestedgrid2 {
+  display:grid;
+   grid-template-columns:1fr;
+  grid-template-areas:
+   "div1"
+   "div2";
+	}
+
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
 .container1 { /*for index.html*/
@@ -306,6 +350,13 @@ aside{
     "nav main"
     "footer footer";
   }
+  .nestedgrid2 {
+  display:grid;
+   grid-template-columns:1fr ;
+  grid-template-areas:
+   "div1"
+   "div2";
+	}
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -356,7 +407,7 @@ aside{
    "section fig1";
 	}
 	
-	.container4 { /*for destination.html*/
+	.container4 { /*for destination.html and                contact.html*/
 	grid-gap: .5em;
   grid-template-columns:auto 1fr;
   display:grid;
@@ -365,4 +416,11 @@ aside{
     "nav main"
     "footer footer";
   }
+  .nestedgrid2 {
+  display:grid;
+   grid-template-columns:1fr 1fr;
+  grid-template-areas:
+   "div1 div2";
+	}
+
 }
