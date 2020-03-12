@@ -407,7 +407,7 @@ aside{
    "section fig1";
 	}
 	
-	.container4 { /*for destination.html and                contact.html*/
+	.container4 { /*for destination.html and contact.html*/
 	grid-gap: .5em;
   grid-template-columns:auto 1fr;
   display:grid;
