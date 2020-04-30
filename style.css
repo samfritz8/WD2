@@ -254,7 +254,7 @@ aside{
  "section"
   "fig1";
 }
-	.container4 { /*for destination.html*/
+.container4 { /*for destination.html*/
   grid-template-columns:100%;
   display:grid;
   grid-template-areas:
@@ -262,9 +262,15 @@ aside{
     "nav"
     "main"
     "footer";
-    
-
-  }
+}
+.nestedgrid3 {
+  display: grid;
+  grid-gap:.5em;
+  justify-items:center;
+  align-items:end;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+  
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -407,7 +413,7 @@ aside{
    "section fig1";
 	}
 	
-	.container4 { /*for destination.html and contact.html*/
+	.container4 { /*for destination.html and                contact.html*/
 	grid-gap: .5em;
   grid-template-columns:auto 1fr;
   display:grid;
